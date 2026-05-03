@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 from pathlib import Path
 
+from django.conf.global_settings import DEFAULT_AUTO_FIELD
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -107,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
 
@@ -124,3 +126,5 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
